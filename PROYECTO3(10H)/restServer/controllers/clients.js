@@ -86,7 +86,7 @@ const clientsPUT= async (req = request, res = response) => {
     };
    
   });
-  const clients = await Client.find({_id: '618d5f37ef7fa88a1db1a288'});
+  const clients = await Client.find({_id: '`${_id}`'});
   res.json({
     //ok: "L'usuari amb id: " + `${_id}` +"Ha cambiat el nom a " +`${nom}`,
     clients
