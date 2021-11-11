@@ -82,7 +82,7 @@ const usuarisPUT= async (req = request, res = response) => {
     
   });
 
-  const usuaris = await Usuari.find({_id: '618d5ec3ef7fa88a1db1a27c'});
+  const usuaris = await Usuari.find({_id: '`${_id}`'});
   res.json({
     usuaris
    // ok: "L'usuari amb id: " + `${_id}` +"Ha cambiat el nom a " +`${nom}`,
